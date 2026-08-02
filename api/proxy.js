@@ -21,6 +21,7 @@ module.exports = (req, res) => {
     headers: {
       ...req.headers,
       host: TARGET,
+      'x-wl-channel': '5',
     },
     rejectUnauthorized: false,
   };
